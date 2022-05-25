@@ -1,10 +1,10 @@
 
-// Jons stats
+// Jon's stats
 let jonSnowAttack = 25;
 let jonSnowHealth = 100;
 let jonSnowDefense = 0;
 
-// Jamies stats
+// Jamie's stats
 let jamieLannisterAttack = 35;
 
 
@@ -34,3 +34,16 @@ if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
     (jonSnowHealth -= jamieLannisterAttack - jonSnowDefense)
     console.log(`Jon Snow's health is down to ${jonSnowHealth}`);
 }
+
+// Peasant throwns Jon a health-kit of 50
+
+const healthKit = 50
+
+if (jonSnowHealth + healthKit >= 100) {
+    jonSnowHealth = 100
+    console.log("Jon Snow's health is 100")
+} else {
+    jonSnowHealth += healthKit
+    console.log("Jon Snow's health has been increased by 50")
+}
+
