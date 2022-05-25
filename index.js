@@ -47,4 +47,4 @@ if (jonSnowHealth + healthKit >= 100) {
     console.log("Jon Snow's health has been increased by 50")
 }
 
-console.log("GitHub push test")
+console.log("GitHub push test!")
