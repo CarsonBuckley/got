@@ -5,7 +5,7 @@ let jonSnowHealth = 100;
 let jonSnowDefense = 0;
 
 // Jamies stats
-let jamieLannisterAttack = 107;
+let jamieLannisterAttack = 35;
 
 
 if (jonSnowAttack > jamieLannisterAttack) {
@@ -22,5 +22,15 @@ if (jonSnowHealth <= jamieLannisterAttack) {
 } else {
     // jonSnowHealth = jonSnowHealth - jamieLannisterAttack;
     jonSnowHealth -= jamieLannisterAttack
+    console.log(`Jon Snow's health is down to ${jonSnowHealth}`);
+}
+
+// Jon picks up a shield
+jonSnowDefense += 25;
+
+if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
+    console.log("Jon Snow has been slain")
+} else {
+    (jonSnowHealth -= jamieLannisterAttack - jonSnowDefense)
     console.log(`Jon Snow's health is down to ${jonSnowHealth}`);
 }
